@@ -1,0 +1,192 @@
+(qemu) info mtree -f -d
+FlatView #0
+ AS "memory", root: system
+ AS "cpu-memory", root: system
+ Root memory region: system
+  0000000000000000-0000000003ffffff (prio 0, romd): virt.flash0
+  0000000004000000-0000000007ffffff (prio 0, romd): virt.flash1
+  0000000008000000-0000000008000fff (prio 0, i/o): gic_dist
+  0000000008010000-0000000008011fff (prio 0, i/o): gic_cpu
+  0000000008020000-0000000008020fff (prio 0, i/o): gicv2m
+  0000000009000000-0000000009000fff (prio 0, i/o): pl011
+  0000000009010000-0000000009010fff (prio 0, i/o): pl031
+  0000000009020000-0000000009020007 (prio 0, i/o): fwcfg.data
+  0000000009020008-0000000009020009 (prio 0, i/o): fwcfg.ctl
+  0000000009020010-0000000009020017 (prio 0, i/o): fwcfg.dma
+  0000000009030000-0000000009030fff (prio 0, i/o): pl061
+  000000000a000000-000000000a0001ff (prio 0, i/o): virtio-mmio
+  000000000a000200-000000000a0003ff (prio 0, i/o): virtio-mmio
+  000000000a000400-000000000a0005ff (prio 0, i/o): virtio-mmio
+  000000000a000600-000000000a0007ff (prio 0, i/o): virtio-mmio
+  000000000a000800-000000000a0009ff (prio 0, i/o): virtio-mmio
+  000000000a000a00-000000000a000bff (prio 0, i/o): virtio-mmio
+  000000000a000c00-000000000a000dff (prio 0, i/o): virtio-mmio
+  000000000a000e00-000000000a000fff (prio 0, i/o): virtio-mmio
+  000000000a001000-000000000a0011ff (prio 0, i/o): virtio-mmio
+  000000000a001200-000000000a0013ff (prio 0, i/o): virtio-mmio
+  000000000a001400-000000000a0015ff (prio 0, i/o): virtio-mmio
+  000000000a001600-000000000a0017ff (prio 0, i/o): virtio-mmio
+  000000000a001800-000000000a0019ff (prio 0, i/o): virtio-mmio
+  000000000a001a00-000000000a001bff (prio 0, i/o): virtio-mmio
+  000000000a001c00-000000000a001dff (prio 0, i/o): virtio-mmio
+  000000000a001e00-000000000a001fff (prio 0, i/o): virtio-mmio
+  000000000a002000-000000000a0021ff (prio 0, i/o): virtio-mmio
+  000000000a002200-000000000a0023ff (prio 0, i/o): virtio-mmio
+  000000000a002400-000000000a0025ff (prio 0, i/o): virtio-mmio
+  000000000a002600-000000000a0027ff (prio 0, i/o): virtio-mmio
+  000000000a002800-000000000a0029ff (prio 0, i/o): virtio-mmio
+  000000000a002a00-000000000a002bff (prio 0, i/o): virtio-mmio
+  000000000a002c00-000000000a002dff (prio 0, i/o): virtio-mmio
+  000000000a002e00-000000000a002fff (prio 0, i/o): virtio-mmio
+  000000000a003000-000000000a0031ff (prio 0, i/o): virtio-mmio
+  000000000a003200-000000000a0033ff (prio 0, i/o): virtio-mmio
+  000000000a003400-000000000a0035ff (prio 0, i/o): virtio-mmio
+  000000000a003600-000000000a0037ff (prio 0, i/o): virtio-mmio
+  000000000a003800-000000000a0039ff (prio 0, i/o): virtio-mmio
+  000000000a003a00-000000000a003bff (prio 0, i/o): virtio-mmio
+  000000000a003c00-000000000a003dff (prio 0, i/o): virtio-mmio
+  000000000a003e00-000000000a003fff (prio 0, i/o): virtio-mmio
+  000000003f000000-000000003fffffff (prio 0, i/o): pcie-mmcfg-mmio
+  0000000040000000-000000004fffffff (prio 0, ram): mach-virt.ram
+  Dispatch
+    Physical sections
+      #0 @0000000000000000..ffffffffffffffff (noname) [unassigned]
+      #1 @0000000000000000..ffffffffffffffff (noname) [not dirty]
+      #2 @0000000000000000..ffffffffffffffff (noname) [ROM]
+      #3 @0000000000000000..ffffffffffffffff (noname) [watch]
+      #4 @0000000000000000..0000000003ffffff virt.flash0
+      #5 @0000000004000000..0000000007ffffff virt.flash1
+      #6 @0000000008000000..0000000008000fff gic_dist
+      #7 @0000000008010000..0000000008011fff gic_cpu [MRU]
+      #8 @0000000008020000..0000000008020fff gicv2m
+      #9 @0000000009000000..0000000009000fff pl011
+      #10 @0000000009010000..0000000009010fff pl031
+      #11 @0000000009020000..0000000009020fff (noname)
+      #12 @0000000009020000..0000000009020007 fwcfg.data
+      #13 @0000000009020008..0000000009020009 fwcfg.ctl
+      #14 @0000000009020010..0000000009020017 fwcfg.dma
+      #15 @0000000009030000..0000000009030fff pl061
+      #16 @000000000a000000..000000000a000fff (noname)
+      #17 @000000000a000000..000000000a0001ff virtio-mmio
+      #18 @000000000a000200..000000000a0003ff virtio-mmio
+      #19 @000000000a000400..000000000a0005ff virtio-mmio
+      #20 @000000000a000600..000000000a0007ff virtio-mmio
+      #21 @000000000a000800..000000000a0009ff virtio-mmio
+      #22 @000000000a000a00..000000000a000bff virtio-mmio
+      #23 @000000000a000c00..000000000a000dff virtio-mmio
+      #24 @000000000a000e00..000000000a000fff virtio-mmio
+      #25 @000000000a001000..000000000a001fff (noname)
+      #26 @000000000a001000..000000000a0011ff virtio-mmio
+      #27 @000000000a001200..000000000a0013ff virtio-mmio
+      #28 @000000000a001400..000000000a0015ff virtio-mmio
+      #29 @000000000a001600..000000000a0017ff virtio-mmio
+      #30 @000000000a001800..000000000a0019ff virtio-mmio
+      #31 @000000000a001a00..000000000a001bff virtio-mmio
+      #32 @000000000a001c00..000000000a001dff virtio-mmio
+      #33 @000000000a001e00..000000000a001fff virtio-mmio
+      #34 @000000000a002000..000000000a002fff (noname)
+      #35 @000000000a002000..000000000a0021ff virtio-mmio
+      #36 @000000000a002200..000000000a0023ff virtio-mmio
+      #37 @000000000a002400..000000000a0025ff virtio-mmio
+      #38 @000000000a002600..000000000a0027ff virtio-mmio
+      #39 @000000000a002800..000000000a0029ff virtio-mmio
+      #40 @000000000a002a00..000000000a002bff virtio-mmio
+      #41 @000000000a002c00..000000000a002dff virtio-mmio
+      #42 @000000000a002e00..000000000a002fff virtio-mmio
+      #43 @000000000a003000..000000000a003fff (noname)
+      #44 @000000000a003000..000000000a0031ff virtio-mmio
+      #45 @000000000a003200..000000000a0033ff virtio-mmio
+      #46 @000000000a003400..000000000a0035ff virtio-mmio
+      #47 @000000000a003600..000000000a0037ff virtio-mmio
+      #48 @000000000a003800..000000000a0039ff virtio-mmio
+      #49 @000000000a003a00..000000000a003bff virtio-mmio
+      #50 @000000000a003c00..000000000a003dff virtio-mmio
+      #51 @000000000a003e00..000000000a003fff virtio-mmio
+      #52 @000000003f000000..000000004effffff pcie-mmcfg-mmio
+      #53 @0000000040000000..000000004fffffff mach-virt.ram
+    Nodes (9 bits per level, 6 levels) ptr=[3] skip=4
+      [0]
+	  0       skip=3  ptr=[3]
+	  1..511  skip=1  ptr=NIL
+      [1]
+	  0       skip=2  ptr=[3]
+	  1..511  skip=1  ptr=NIL
+      [2]
+	  0       skip=1  ptr=[3]
+	  1..511  skip=1  ptr=NIL
+      [3]
+	  0       skip=1  ptr=[4]
+	  1       skip=1  ptr=[8]
+	  2..511  skip=1  ptr=NIL
+      [4]
+	  0..31   skip=0  ptr=#4
+	 32..63   skip=0  ptr=#5
+	 64       skip=1  ptr=[5]
+	 65..71   skip=1  ptr=NIL
+	 72       skip=1  ptr=[6]
+	 73..79   skip=1  ptr=NIL
+	 80       skip=1  ptr=[7]
+	 81..503  skip=1  ptr=NIL
+	504..511  skip=0  ptr=#52
+      [5]
+	  0       skip=0  ptr=#6
+	  1..15   skip=0  ptr=#0
+	 16..17   skip=0  ptr=#7
+	 18..31   skip=0  ptr=#0
+	 32       skip=0  ptr=#8
+	 33..511  skip=0  ptr=#0
+      [6]
+	  0       skip=0  ptr=#9
+	  1..15   skip=0  ptr=#0
+	 16       skip=0  ptr=#10
+	 17..31   skip=0  ptr=#0
+	 32       skip=0  ptr=#11
+	 33..47   skip=0  ptr=#0
+	 48       skip=0  ptr=#15
+	 49..511  skip=0  ptr=#0
+      [7]
+	  0       skip=0  ptr=#16
+	  1       skip=0  ptr=#25
+	  2       skip=0  ptr=#34
+	  3       skip=0  ptr=#43
+	  4..511  skip=0  ptr=#0
+      [8]
+	  0..127  skip=0  ptr=#53
+	128..511  skip=1  ptr=NIL
+
+FlatView #1
+ AS "gpex-root", root: bus master container
+ AS "virtio-net-pci", root: bus master container
+ Root memory region: (none)
+  No rendered FlatView
+
+FlatView #2
+ AS "I/O", root: io
+ Root memory region: io
+  0000000000000000-000000000000ffff (prio 0, i/o): io
+  Dispatch
+    Physical sections
+      #0 @0000000000000000..ffffffffffffffff (noname) [unassigned]
+      #1 @0000000000000000..ffffffffffffffff (noname) [not dirty]
+      #2 @0000000000000000..ffffffffffffffff (noname) [ROM]
+      #3 @0000000000000000..ffffffffffffffff (noname) [watch]
+      #4 @0000000000000000..000000000000ffff io [ROOT]
+    Nodes (9 bits per level, 6 levels) ptr=[5] skip=6
+      [0]
+	  0       skip=5  ptr=[5]
+	  1..511  skip=1  ptr=NIL
+      [1]
+	  0       skip=4  ptr=[5]
+	  1..511  skip=1  ptr=NIL
+      [2]
+	  0       skip=3  ptr=[5]
+	  1..511  skip=1  ptr=NIL
+      [3]
+	  0       skip=2  ptr=[5]
+	  1..511  skip=1  ptr=NIL
+      [4]
+	  0       skip=1  ptr=[5]
+	  1..511  skip=1  ptr=NIL
+      [5]
+	  0..15   skip=0  ptr=#4
+	 16..511  skip=0  ptr=#0
